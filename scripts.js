@@ -1,18 +1,15 @@
-var a = 1,
-	b = 0,
-	pierwszynawias = a*a,
-	druginawias = 2*a*b,
-	trzecinawias = b*b,
-	value = pierwszynawias - druginawias + trzecinawias;
-
-if (value > 0) {
-	console.log('wynik dodatni')
+function getTriangleArea(a, h) {
+	if ((a <= 0) || (h <= 0)) {
+		console.log('złe dane')
+	}
+	else {
+		return a*h/2
+	}
 }
 
-else if (0 > value) {
-	console.log("wynik ujemny")
-}
+console.log(getTriangleArea(10,6))
+console.log(getTriangleArea(10,2))
+console.log(getTriangleArea(10,1))
 
-else {
-	console.log("wynik równy 0")
-}
+
+
